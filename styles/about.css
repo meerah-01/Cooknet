@@ -1,5 +1,5 @@
 .About-section{
-  background-color: rgba(247, 212, 132, 0.511);
+  background-color: rgba(250, 180, 89, 0.479);
 }
 .about-details{
   display: flex;
@@ -63,4 +63,5 @@ span{
   width: 13%;
   height: auto;
 } 
+
 
