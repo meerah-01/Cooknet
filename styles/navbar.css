@@ -68,7 +68,7 @@ li a.button {
 
   .hamburger {
     display: block;
-    position: sticky;
+    position: fixed;
     right: 20px;
     margin-left: 280px;
     font-size: 25px;
@@ -79,7 +79,7 @@ li a.button {
   }
 
   .hamburger img{
-    width: 20px;
+    width: 35px;
   }
 
   .mobile-menu {
@@ -123,5 +123,6 @@ li a.button {
     margin-left: 180px;
   }
 }
+
 
 
