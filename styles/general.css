@@ -1,0 +1,13 @@
+/* *{
+  outline: 2px solid red;
+}   */
+  body{
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: Aladin;
+  color: #3E2A28;
+}
+button, input, textarea{
+  font: inherit;
+}
