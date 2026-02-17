@@ -31,10 +31,11 @@
 
 @media (max-width: 600px) {
   .hero-text{
-   margin-top: -120px;
+   margin-top: -300px;
   }
   .hero-button {
     margin-top: -10px;
   }
 } 
+
 
