@@ -67,15 +67,17 @@ li a.button {
   }
  .hamburger {
   display: block;
-  background: none;
+  background: white;
   border: none;
   cursor: pointer;
   z-index: 1001;
   }
 
-  .hamburger img{
-    width: 35px;
-  }
+  .fa-bars {
+  font-size: 28px;    
+  color: black; 
+  cursor: pointer;
+}
 
   .links {
     justify-content: flex-end;
@@ -126,6 +128,7 @@ li a.button {
     display: block;
   }
 }
+
 
 
 
