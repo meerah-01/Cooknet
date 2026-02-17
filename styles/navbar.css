@@ -65,21 +65,20 @@ li a.button {
     display: flex;
     flex-direction: column;
   }
-
-  .hamburger {
-    display: block;
-    position: fixed;
-    right: 20px;
-    margin-left: 280px;
-    font-size: 25px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    z-index: 1001;
+ .hamburger {
+  display: block;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1001;
   }
 
   .hamburger img{
     width: 35px;
+  }
+
+  .links {
+    justify-content: flex-end;
   }
 
   .mobile-menu {
@@ -119,10 +118,15 @@ li a.button {
 }
 
 @media (max-width: 445px) {
+   .links {
+    justify-content: flex-end;
+  }
+
   .hamburger {
-    margin-left: 180px;
+    display: block;
   }
 }
+
 
 
 
