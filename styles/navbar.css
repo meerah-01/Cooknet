@@ -52,7 +52,7 @@ li a.button {
   border-radius: 20px;
 }
 
-.hamburger {
+.hamburger, .exit {
   display: none;
 }
 
@@ -73,11 +73,24 @@ li a.button {
   z-index: 1001;
   }
 
+  .exit {
+   display: block;
+  border: none;
+  cursor: pointer;
+  z-index: 1001;
+  } 
+
   .fa-bars {
   font-size: 28px;    
   color: black; 
   cursor: pointer;
-}
+  }
+
+  .fa-x{
+  font-size: 28px;    
+  color: white; 
+  cursor: pointer;
+  }
 
   .links {
     justify-content: flex-end;
@@ -93,8 +106,9 @@ li a.button {
     color: #fff;
     display: flex;
     flex-direction: column;
-    padding: 80px 20px;
-    gap: 20px;
+    padding: 0 30px;
+    padding-top: 10px;
+    padding-bottom: 80px;
     transition: right 0.3s ease;
     z-index: 1000;
   }
@@ -119,15 +133,7 @@ li a.button {
   }
 }
 
-@media (max-width: 445px) {
-   .links {
-    justify-content: flex-end;
-  }
 
-  .hamburger {
-    display: block;
-  }
-}
 
 
 
