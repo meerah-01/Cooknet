@@ -1,9 +1,11 @@
-.hero{
+.hero-section {
+  position: relative;
+}
+.hero-section img {
   width: 100%;
   height: auto;
   object-fit: cover;
-  position: relative;
-} 
+}
 .hero-text{
   font-family: "Aladin", system-ui;
   position: absolute;
@@ -29,20 +31,8 @@
   border-radius: 15px;
 }
 
-@media (max-width: 600px) {
-  .hero-text{
-    top: 30%;
-  }
-  .hero-button {
-    margin-top: -10px;
-  }
-} 
 
-@media (max-width: 420px) {
-   .hero-text{
-    top: 25%;
-  }
-}
+
 
 
 
