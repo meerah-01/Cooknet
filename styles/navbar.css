@@ -1,0 +1,154 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  /* top: 0;
+  height: 80%;
+  width: 100%;
+  background-color: white;  */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex: 0 0 auto;
+}
+
+.logo-pic {
+  width: 70px;
+  height: auto;
+}
+
+.logo-name {
+  color: rgb(87, 20, 20);
+  font-size: 20px;
+  margin: 0;
+}
+
+.mobile-menu {
+  display: flex;
+  gap: 40px;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 25px;
+}
+
+.links {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
+li a {
+  color: rgb(87, 20, 20);
+  text-decoration: none;
+  line-height: 1.5;
+}
+
+li a.button {
+  background-color: white;
+  color: rgb(87, 20, 20);
+  border: 2px solid rgb(87, 20, 20);
+  padding: 8px 10px;
+  border-radius: 20px;
+}
+
+.hamburger,
+.exit {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .mobile-menu, .exit {
+    display: none;
+  }
+
+  .mobile-menu.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hamburger {
+    display: block;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
+  }
+
+  .exit {
+    position: absolute;
+    display: block;
+    top: 30px;
+    left: 20px;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
+  }
+
+  .fa-bars {
+    font-size: 28px;
+    color: black;
+    cursor: pointer;
+  }
+
+  .fa-x {
+    font-size: 28px;
+    color: #3E2A28;
+    cursor: pointer;
+    
+  }
+
+  .mobile-menu {
+    position: fixed;
+    gap: 20px;
+    background-color: white;
+    width: 70%;
+    height: 100vh;
+    top: 0;
+    right: -100%;
+    z-index: 1001;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .mobile-menu li{
+    width: 100%;
+  }
+
+  .mobile-menu a {
+    display: block;
+    text-align: center;
+    font-size: 1.2rem;
+    width: 100%;
+    background-color: white;
+    color: rgb(87, 20, 20);
+    border: 2px solid rgb(87, 20, 20);
+    padding: 8px 10px;
+    border-radius: 20px;
+  }
+
+  .mobile-menu.active {
+    right: 0;
+    transform: translateX(0);
+  }
+
+  .hamburger.hide {
+    display: none;
+  }
+
+  .logo-pic {
+    width: 50px;
+  }
+
+  .logo {
+    gap: 1rem;
+  }
+
+  .logo-name {
+    font-size: 16px;
+  }
+}
