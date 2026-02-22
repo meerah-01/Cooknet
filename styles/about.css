@@ -1,0 +1,88 @@
+.about-details{
+  display: flex;
+}
+.about-head h2{
+  font-family: "Aladin", system-ui;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 2.8rem;
+}
+.about-picture, .about-write-up{
+  flex: 1;
+  margin-top: 10px;
+}
+.about-picture{
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.picture{
+  width: 100%;
+  max-width: 450px;   
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 50px 35px 120px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.324);
+}
+.about-write-up{
+  display: flex;
+  flex-direction: column;
+  
+}
+.about-write-up h2{
+  font-weight: bolder;
+  font-size: 2.5rem;
+  font-family: "Aladin", system-ui;
+}
+span{
+  font-size: 1.25rem;
+}
+.write-up{
+  width: min(45em, 95%);
+  line-height: 25px;
+}
+.picture{
+  width: auto;
+}
+.icon-details{
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 15px; 
+  justify-content: start; 
+  margin-top: 15px;
+}
+.ball{
+  background-color: #000;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+}
+.points{
+  margin-top: -1px;
+}
+.btn{
+  background-color: #E3B04B;
+  border: none;
+  padding: 10px 13px;
+  border-radius: 20px;
+  color: white;
+}
+
+@media (max-width: 999px) {
+  .about-picture{
+    display: none;
+  }
+  .about-write-up {
+    padding-left: 15px;
+    margin-top: -20px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .picture{
+    width: 80%;
+    max-width: 450px;
+    margin: 0;
+  }
+}
