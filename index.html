@@ -22,7 +22,7 @@
     <div>
       <div class="navbar">
         <div class="logo">
-          <a href="#"><img src="images/logo.jpg" class="logo-pic" /></a>
+          <img src="images/logo.jpg" class="logo-pic" />
           <h2 class="logo-name">COOKNET</h2>
         </div>
         <div class="links">
@@ -39,7 +39,9 @@
         </div>
       </div>
       <div class="hero-section">
-        <img src="images/hero.jpg" class="hero" />
+        <div class="hero">
+          <img src="images/hero.jpg" class="hero" />
+        </div>
         <div class="hero-text">
           <h1>Fresh From The Oven To Your Heart</h1>
           <p>Warm&sdot; Buttery&sdot; Irresistible</p>
@@ -50,27 +52,29 @@
         <div class="about-head">
           <h2>About Us</h2>
         </div>
-        <div class="about-details">
-          <div class="about-picture">
-            <img src="images/about.JPG" alt="" class="picture" />
-          </div>
-          <div class="about-write-up">
-            <h2>More Than Just Baking</h2>
-            <p class="write-up">
-              <span>W</span>e create fresh, handcrafted breads, cakes, and
-              pastries using quality ingrediets. From everyday treats to special
-              occasions, we serve great taste with friendly care.
-            </p>
-            <div class="icon-details">
-              <div class="ball"></div>
-              <p class="points">Made With Fresh Ingredients</p>
-              <div class="ball"></div>
-              <p class="points">Best Prices & Offers</p>
-              <div class="ball"></div>
-              <p class="points">Delicious Pastries</p>
+        <div class="content">
+          <div class="about-details">
+            <div class="about-picture">
+              <img src="images/about.JPG" alt="" class="picture" />
             </div>
-            <div class="button">
-              <button class="btn">Read More</button>
+            <div class="about-write-up">
+              <h2>More Than Just Baking</h2>
+              <p class="write-up">
+                <span>W</span>e create fresh, handcrafted breads, cakes, and
+                pastries using quality ingrediets. From everyday treats to
+                special occasions, we serve great taste with friendly care.
+              </p>
+              <div class="icon-details">
+                <div class="ball"></div>
+                <p class="points">Made With Fresh Ingredients</p>
+                <div class="ball"></div>
+                <p class="points">Best Prices & Offers</p>
+                <div class="ball"></div>
+                <p class="points">Delicious Pastries</p>
+              </div>
+              <div class="button">
+                <button class="btn">Read More</button>
+              </div>
             </div>
           </div>
         </div>
@@ -235,66 +239,70 @@
         <div class="contact-head">
           <p>Connect With Us</p>
         </div>
-        <div class="contact-details">
-          <div class="contact-form">
-            <div class="input-row">
-              <div class="input">
-                <label>Full Name</label>
-                <input type="text" class="text" />
+        <div class="container">
+          <div class="contact-details">
+            <div class="contact-form">
+              <div class="input-row">
+                <div class="input">
+                  <label>Full Name</label>
+                  <input type="text" class="text" />
+                </div>
+                <div class="input">
+                  <label>Email</label>
+                  <input type="email" class="text" />
+                </div>
               </div>
               <div class="input">
-                <label>Email</label>
-                <input type="email" class="text" />
+                <label>Phone Number</label>
+                <input type="tel" class="number" />
+              </div>
+              <div class="input">
+                <label>Your Message</label>
+                <textarea class="message"></textarea>
+              </div>
+              <div>
+                <button class="submit-btn">Submit Message</button>
               </div>
             </div>
-            <div class="input">
-              <label>Phone Number</label>
-              <input type="tel" class="number" />
-            </div>
-            <div class="input">
-              <label>Your Message</label>
-              <textarea class="message"></textarea>
-            </div>
-            <div>
-              <button class="submit-btn">Submit Message</button>
-            </div>
-          </div>
-          <div class="details">
-            <div class="more-details">
-              <img src="images/iconpic/address.svg" />
-              <div class="icon-detail">
-                <h5>Our Address</h5>
-                <p>134 Pastry District, Ogun State, Nigeria</p>
+            <div class="details">
+              <div class="more-details">
+                <img src="images/iconpic/address.svg" />
+                <div class="icon-detail">
+                  <h5>Our Address</h5>
+                  <p>134 Pastry District, Ogun State, Nigeria</p>
+                </div>
               </div>
-            </div>
-            <div class="more-details">
-              <img src="images/iconpic/call.svg" />
-              <div class="icon-detail">
-                <h5>Phone Number</h5>
-                <p>+234 (0)9146824581</p>
+              <div class="more-details">
+                <img src="images/iconpic/call.svg" />
+                <div class="icon-detail">
+                  <h5>Phone Number</h5>
+                  <p>+234 (0)9146824581</p>
+                </div>
               </div>
-            </div>
-            <div class="more-details">
-              <img src="images/iconpic/email.svg" />
-              <div class="icon-detail">
-                <h5>Email</h5>
-                <p>cooknetpastries@ymail.com</p>
+              <div class="more-details">
+                <img src="images/iconpic/email.svg" />
+                <div class="icon-detail">
+                  <h5>Email</h5>
+                  <p>cooknetpastries@ymail.com</p>
+                </div>
               </div>
-            </div>
-            <div class="map-pic">
-              <img src="images/contact.JPG" />
+              <div class="map-pic">
+                <img src="images/contact.JPG" />
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-     <script src="index.js"></script>
+    <script src="cooknet.js"></script>
     <script
       src="https://kit.fontawesome.com/6beba3967e.js"
       crossorigin="anonymous"
     ></script>
   </body>
 </html>
+
+
 
 
 
