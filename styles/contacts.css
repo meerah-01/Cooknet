@@ -1,0 +1,112 @@
+.contact-head{
+  text-align: center;
+  font-size: 40px;
+  font-weight: bolder;
+  font-family: "Aladin", system-ui;
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+.contact-details{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: clamp(40vh, 50%, 50vh);
+  gap: 40px;
+}
+.contact-form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 370px;
+  background-color: wheat;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.212);
+}
+.input-row{
+  display: flex;
+  gap: 25px;
+}
+.input-row input {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 100%;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 10px;
+}
+.submit-btn{
+  border: none;
+  padding: 8px 10px;
+  border-radius: 10px;
+  background-color: white;
+  color: black;
+  align-items: center;
+}
+.details{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex: 1;
+  margin-top: 10px;
+}
+.more-details{
+  display: flex;
+}
+.more-details img{
+  width: 40px;
+  height: 40px;
+  background-color: wheat;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+.icon-detail{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+.icon-detail h5{
+  margin-top: 5px;
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+.icon-detail p{
+  margin-top: -10px;
+  font-size: 13px;
+}
+.map-pic img{
+  width: clamp(340px, 50%, 380px);
+  height: 180px;
+  object-fit: cover;
+  border-radius: 15px;
+  opacity: 0.85;
+  margin-top: 7px;
+}
+
+@media (max-width: 900px) {
+  .contact-details{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 150vh;
+  }
+
+  .container{
+    padding: 10px 15px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .contact-details{
+    margin-top: -30px;
+  }
+}
