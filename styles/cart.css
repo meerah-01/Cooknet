@@ -1,0 +1,125 @@
+.cart{
+  position: relative;
+}
+.cart i{
+  background-color: white;
+  border: none;
+  color: rgb(87, 20, 20);
+  font-size: 20px;
+  padding-top: 28px;
+  padding-right: 10px;
+  cursor: pointer;
+}
+.inCart{
+  position: absolute;
+  top: 7px;
+  left: 15px;
+  color: black;
+  font-size: 12px;
+  padding: 2px 5px;
+  background-color: white;
+  border-radius: 50%;
+}
+.cart-menu{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  gap: 20px;
+  background-color: white;
+  width: 50%;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  padding-top: 40px;
+  right: -100%;
+  overflow-y: scroll;
+  z-index: 1001;
+  transition: transform 0.3s ease-in-out;
+} 
+
+.cart-icon{
+  margin-right: 380px;
+}
+
+.cart-menu.show{
+  right: 0;
+  transform: translateX(0);
+}
+.close{
+  position: absolute;
+  display: block;
+  margin-bottom: 100px;
+  top: 30px;
+  left: 20px;
+  bottom: 50px;
+  border: none;
+  cursor: pointer;
+  z-index: 1001;
+  font-size: 28px;
+  cursor: pointer;
+}
+.organize{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  border-bottom: 1px solid black;
+}
+.imageCart{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+.update-quantity{
+  display: flex;
+  gap: 20px;
+}
+.update-quantity p {
+  margin-top: -1px;
+}
+.total-price{
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px solid black;
+  height: 60px;
+  margin-top: auto;
+}
+.cart-total{
+  font-size: 30px;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+.checkout{
+ border: none;
+ background-color: rgb(87, 20, 20);
+ color: white;
+ padding: 1px 10px;
+ border-radius: 50px;
+ margin-right: 20px;
+}
+
+@media (max-width: 600px) {
+  .cart-menu{
+     width: 100%;
+  }
+  .cart-info{
+    padding-left: 15px;
+  }
+  .cart i{
+    padding-top: 7px;
+    padding-right: 15px;
+    font-size: 23px;
+    margin-right: 0;
+    height: 40px;
+  }
+    .inCart{
+    top: -10px;
+    left: 15px;
+    font-size: 13px;
+    padding: 1px 5px;
+  }
+  .close{
+    left: 40px;
+    bottom: 70px;
+    top: 15px;
+  }
+}
